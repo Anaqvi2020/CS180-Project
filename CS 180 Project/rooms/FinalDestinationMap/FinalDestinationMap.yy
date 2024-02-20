@@ -14,6 +14,7 @@
     {"name":"inst_20944104","path":"rooms/FinalDestinationMap/FinalDestinationMap.yy",},
     {"name":"inst_7E1C91B1","path":"rooms/FinalDestinationMap/FinalDestinationMap.yy",},
     {"name":"inst_3F2DB70F","path":"rooms/FinalDestinationMap/FinalDestinationMap.yy",},
+    {"name":"inst_6180269A","path":"rooms/FinalDestinationMap/FinalDestinationMap.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -35,6 +36,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_platfomPos","path":"objects/obj_platfomPos/obj_platfomPos.yy",},"propertyId":{"name":"platformID","path":"objects/obj_platfomPos/obj_platfomPos.yy",},"value":"platform2",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_platfomPos","path":"objects/obj_platfomPos/obj_platfomPos.yy",},"propertyId":{"name":"startingPoint","path":"objects/obj_platfomPos/obj_platfomPos.yy",},"value":"False",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":224.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6180269A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Player1","path":"objects/Player1/Player1.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":256.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"Background1","path":"sprites/Background1/Background1.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
