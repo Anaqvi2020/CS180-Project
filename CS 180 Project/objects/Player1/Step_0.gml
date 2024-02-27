@@ -3,8 +3,16 @@ move_x *= move_speed;
 
 if (place_meeting(x, y+2, obj_FinalDestination))
 {
+	curr_jumps = 0;
 	move_y = 0;
-	if (keyboard_check(vk_space)) move_y = -jump_speed;
+	if (keyboard_check_pressed(vk_space) && curr_jumps < 2) {
+		move_y = -jump_speed;
+		curr_jumps += 1;
+	}
+}
+else if (keyboard_check_pressed(vk_space) && curr_jumps < 2) {
+	move_y = -jump_speed;
+	curr_jumps += 1;
 }
 else if (move_y < 10) move_y += 1;
 
