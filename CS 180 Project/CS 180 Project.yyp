@@ -42,8 +42,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"VFX","folderPath":"folders/Sprites/VFX.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player 1","folderPath":"folders/Sprites/Environment/Player 1.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Players","folderPath":"folders/Objects/Players.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
