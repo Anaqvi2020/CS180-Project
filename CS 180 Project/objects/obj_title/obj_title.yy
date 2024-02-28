@@ -1,0 +1,42 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_title",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},"propertyId":{"name":"text","path":"objects/obj_text_parent/obj_text_parent.yy",},"value":"Melee Malders",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},"propertyId":{"name":"color","path":"objects/obj_text_parent/obj_text_parent.yy",},"value":"c_black",},
+  ],
+  "parent": {
+    "name": "Text",
+    "path": "folders/Objects/Text.yy",
+  },
+  "parentObjectId": {
+    "name": "obj_text_parent",
+    "path": "objects/obj_text_parent/obj_text_parent.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_backButton",
+    "path": "sprites/spr_backButton/spr_backButton.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}
