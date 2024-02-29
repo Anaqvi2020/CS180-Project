@@ -62,10 +62,19 @@ if (move_y <  10) {
 	move_y += gravSpeed;
 }
 
+
 if (move_x != 0) {
 	image_xscale = sign(move_x);
-	sprite_index = Running;
+	if(move_y < 0.5) {
+		sprite_index = Jumping;
+	} else {
+		sprite_index = Running;
+	}
 } else {
 	sprite_index = Idle;
 }
+if(move_y < 0) {
+	sprite_index = Jumping;
+}
+//move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);

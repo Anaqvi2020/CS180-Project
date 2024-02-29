@@ -46,8 +46,8 @@
     {"name":"obj_controlsTitle","order":4,"path":"objects/obj_controlsTitle/obj_controlsTitle.yy",},
     {"name":"Background1","order":5,"path":"sprites/Background1/Background1.yy",},
     {"name":"Running","order":1,"path":"sprites/Running/Running.yy",},
-    {"name":"Jumping","order":2,"path":"sprites/Jumping/Jumping.yy",},
     {"name":"obj_overviewButton","order":2,"path":"objects/obj_overviewButton/obj_overviewButton.yy",},
+    {"name":"Jumping","order":15,"path":"sprites/Jumping/Jumping.yy",},
     {"name":"Platform","order":4,"path":"sprites/Platform/Platform.yy",},
   ],
 }
