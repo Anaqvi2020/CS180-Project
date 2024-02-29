@@ -90,8 +90,8 @@
     {"id":{"name":"obj_controlsTitle","path":"objects/obj_controlsTitle/obj_controlsTitle.yy",},},
     {"id":{"name":"Background1","path":"sprites/Background1/Background1.yy",},},
     {"id":{"name":"Running","path":"sprites/Running/Running.yy",},},
-    {"id":{"name":"Jumping","path":"sprites/Jumping/Jumping.yy",},},
     {"id":{"name":"obj_overviewButton","path":"objects/obj_overviewButton/obj_overviewButton.yy",},},
+    {"id":{"name":"Jumping","path":"sprites/Jumping/Jumping.yy",},},
     {"id":{"name":"Platform","path":"sprites/Platform/Platform.yy",},},
   ],
   "RoomOrderNodes": [
