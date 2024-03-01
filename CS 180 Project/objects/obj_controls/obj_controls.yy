@@ -5,7 +5,7 @@
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},"propertyId":{"name":"text","path":"objects/obj_text_parent/obj_text_parent.yy",},"value":"We haven't finalized controls yet lol.",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},"propertyId":{"name":"text","path":"objects/obj_text_parent/obj_text_parent.yy",},"value":"Player 1:\\nWASD for movement\\n\\nPlayer 2:\\nArrow Keys for movement",},
   ],
   "parent": {
     "name": "Text",
@@ -26,7 +26,12 @@
   "physicsRestitution": 0.1,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsShapePoints": [],
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":768.0,"y":0.0,},
+    {"x":768.0,"y":240.0,},
+    {"x":0.0,"y":240.0,},
+  ],
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,

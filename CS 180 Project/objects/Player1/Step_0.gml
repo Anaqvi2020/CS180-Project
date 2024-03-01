@@ -2,7 +2,7 @@ move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
 move_x *= move_speed;
 
 // jump
-if (keyboard_check_pressed(vk_space) && (place_meeting(x, y + 1, obj_FinalDestination) || curr_jumps < 2)) {
+if (keyboard_check_pressed(vk_up) && (place_meeting(x, y + 1, obj_FinalDestination) || curr_jumps < 2)) {
 	move_y = -jump_speed;
 	curr_jumps += 1;
 }

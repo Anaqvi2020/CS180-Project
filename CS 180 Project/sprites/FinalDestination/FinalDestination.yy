@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "FinalDestination",
-  "bbox_bottom": 200,
+  "bbox_bottom": 20,
   "bbox_left": 25,
   "bbox_right": 430,
   "bbox_top": 15,
