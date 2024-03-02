@@ -1,8 +1,8 @@
-move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
+move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 move_x *= move_speed;
 
 // jump
-if (keyboard_check_pressed(vk_up) && (place_meeting(x, y + 1, obj_FinalDestination) || curr_jumps < 2)) {
+if (keyboard_check_pressed(ord("W")) && (place_meeting(x, y + 1, obj_FinalDestination) || curr_jumps < 2)) {
 	move_y = -jump_speed;
 	curr_jumps += 1;
 }
@@ -28,7 +28,7 @@ if (_movingPlatform && bbox_bottom <= _movingPlatform.bbox_top) {
 	_finalMoveY += _movingPlatform.moveY;
 } 
 
-if (keyboard_check_pressed(vk_down) && place_meeting(x + _finalMoveX, y + 1, obj_platform)) {
+if (keyboard_check_pressed(ord("S")) && place_meeting(x + _finalMoveX, y + 1, obj_platform)) {
 	y += 2;
 }
 
@@ -66,15 +66,15 @@ if (move_y <  10) {
 if (move_x != 0) {
 	image_xscale = sign(move_x);
 	if(move_y < 0) {
-		sprite_index = Jumping;
+	sprite_index = Jumping2;
 	} else {
-		sprite_index = Running;
+		sprite_index = Running2;
 	}
 } else {
-	sprite_index = Idle;
+	sprite_index = Idle2;
 }
 if(move_y < 0) {
-	sprite_index = Jumping;
+	sprite_index = Jumping2;
 }
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
