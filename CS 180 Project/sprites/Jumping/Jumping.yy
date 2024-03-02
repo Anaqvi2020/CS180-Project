@@ -29,8 +29,8 @@
   "nineSlice": null,
   "origin": 1,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Player 1",
+    "path": "folders/Sprites/Player 1.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -51,7 +51,7 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 2.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
