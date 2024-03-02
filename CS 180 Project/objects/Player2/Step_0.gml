@@ -66,7 +66,7 @@ if (move_y <  10) {
 if (move_x != 0) {
 	image_xscale = sign(move_x);
 	if(move_y < 0) {
-		//sprite_index = Jumping2;
+	sprite_index = Jumping2;
 	} else {
 		sprite_index = Running2;
 	}
@@ -74,7 +74,7 @@ if (move_x != 0) {
 	sprite_index = Idle2;
 }
 if(move_y < 0) {
-	//sprite_index = Jumping;
+	sprite_index = Jumping2;
 }
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);

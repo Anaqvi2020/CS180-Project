@@ -84,6 +84,7 @@
     {"id":{"name":"obj_FinalDestination","path":"objects/obj_FinalDestination/obj_FinalDestination.yy",},},
     {"id":{"name":"spr_quitButton","path":"sprites/spr_quitButton/spr_quitButton.yy",},},
     {"id":{"name":"obj_controlsButton","path":"objects/obj_controlsButton/obj_controlsButton.yy",},},
+    {"id":{"name":"Jumping2","path":"sprites/Jumping2/Jumping2.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"Running2","path":"sprites/Running2/Running2.yy",},},
     {"id":{"name":"FinalDestination","path":"sprites/FinalDestination/FinalDestination.yy",},},

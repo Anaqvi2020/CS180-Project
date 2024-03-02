@@ -40,6 +40,7 @@
     {"name":"obj_FinalDestination","order":8,"path":"objects/obj_FinalDestination/obj_FinalDestination.yy",},
     {"name":"spr_quitButton","order":7,"path":"sprites/spr_quitButton/spr_quitButton.yy",},
     {"name":"obj_controlsButton","order":3,"path":"objects/obj_controlsButton/obj_controlsButton.yy",},
+    {"name":"Jumping2","order":2,"path":"sprites/Jumping2/Jumping2.yy",},
     {"name":"Running2","order":1,"path":"sprites/Running2/Running2.yy",},
     {"name":"FinalDestination","order":5,"path":"sprites/FinalDestination/FinalDestination.yy",},
     {"name":"obj_platform","order":9,"path":"objects/obj_platform/obj_platform.yy",},
