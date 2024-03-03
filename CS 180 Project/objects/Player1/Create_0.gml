@@ -21,3 +21,4 @@ dash_duration = 15;
 dash_cooldown = 60;
 dash_timer = 0;
 is_dashing = false;
+is_attacking = false
