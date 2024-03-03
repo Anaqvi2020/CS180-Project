@@ -56,6 +56,7 @@
   "resources": [
     {"id":{"name":"obj_platfomPos","path":"objects/obj_platfomPos/obj_platfomPos.yy",},},
     {"id":{"name":"HealthBar","path":"sprites/HealthBar/HealthBar.yy",},},
+    {"id":{"name":"Guard2","path":"sprites/Guard2/Guard2.yy",},},
     {"id":{"name":"obj_controls","path":"objects/obj_controls/obj_controls.yy",},},
     {"id":{"name":"rmPause","path":"rooms/rmPause/rmPause.yy",},},
     {"id":{"name":"Player1","path":"objects/Player1/Player1.yy",},},
@@ -67,6 +68,7 @@
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},
     {"id":{"name":"spr_backButton","path":"sprites/spr_backButton/spr_backButton.yy",},},
+    {"id":{"name":"Guard","path":"sprites/Guard/Guard.yy",},},
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
     {"id":{"name":"FinalDestinationMap","path":"rooms/FinalDestinationMap/FinalDestinationMap.yy",},},
     {"id":{"name":"Controls","path":"rooms/Controls/Controls.yy",},},

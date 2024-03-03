@@ -76,5 +76,14 @@ if (move_x != 0) {
 if(move_y < 0) {
 	sprite_index = Jumping;
 }
+
+if keyboard_check(ord("M"))
+{
+    sprite_index = Guard;
+	keyboard_clear(vk_left);  // for now you can't move if you push direction
+	keyboard_clear(vk_right); // button before you release the guard key
+	keyboard_clear(vk_up);
+	keyboard_clear(vk_down);
+}
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
