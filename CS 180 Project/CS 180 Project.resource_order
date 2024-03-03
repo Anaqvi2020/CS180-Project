@@ -14,6 +14,7 @@
     {"name":"UI","order":3,"path":"folders/Sprites/UI.yy",},
     {"name":"VFX","order":4,"path":"folders/Sprites/VFX.yy",},
     {"name":"Timelines","order":3,"path":"folders/Timelines.yy",},
+    {"name":"Player 1","order":1,"path":"folders/Sprites/Environment/Player 1.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_platfomPos","order":10,"path":"objects/obj_platfomPos/obj_platfomPos.yy",},
@@ -47,6 +48,13 @@
     {"name":"Background1","order":5,"path":"sprites/Background1/Background1.yy",},
     {"name":"Running","order":1,"path":"sprites/Running/Running.yy",},
     {"name":"obj_overviewButton","order":2,"path":"objects/obj_overviewButton/obj_overviewButton.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"Player2","order":1,"path":"objects/Player2/Player2.yy",},
+    {"name":"Jumping","order":2,"path":"sprites/Jumping/Jumping.yy",},
+    {"name":"Attack","order":3,"path":"sprites/Attack/Attack.yy",},
+    {"name":"player1_hit_box","order":11,"path":"objects/player1_hit_box/player1_hit_box.yy",},
+>>>>>>> Stashed changes
     {"name":"Platform","order":4,"path":"sprites/Platform/Platform.yy",},
   ],
 }

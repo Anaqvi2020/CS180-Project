@@ -44,6 +44,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"VFX","folderPath":"folders/Sprites/VFX.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player 1","folderPath":"folders/Sprites/Environment/Player 1.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -91,6 +92,13 @@
     {"id":{"name":"Background1","path":"sprites/Background1/Background1.yy",},},
     {"id":{"name":"Running","path":"sprites/Running/Running.yy",},},
     {"id":{"name":"obj_overviewButton","path":"objects/obj_overviewButton/obj_overviewButton.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"Player2","path":"objects/Player2/Player2.yy",},},
+    {"id":{"name":"Jumping","path":"sprites/Jumping/Jumping.yy",},},
+    {"id":{"name":"Attack","path":"sprites/Attack/Attack.yy",},},
+    {"id":{"name":"player1_hit_box","path":"objects/player1_hit_box/player1_hit_box.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"Platform","path":"sprites/Platform/Platform.yy",},},
   ],
   "RoomOrderNodes": [

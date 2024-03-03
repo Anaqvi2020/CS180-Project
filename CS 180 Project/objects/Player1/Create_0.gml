@@ -13,4 +13,5 @@ hp_width = 100; //position and dimension of HP Bar
 hp_height = 11;
 hp_x = (window_get_width()/5)-(hp_width/2);
 hp_y = (window_get_height()/5*4);
+is_attacking = false;
 
