@@ -58,10 +58,12 @@
   "resources": [
     {"id":{"name":"obj_platfomPos","path":"objects/obj_platfomPos/obj_platfomPos.yy",},},
     {"id":{"name":"HealthBar","path":"sprites/HealthBar/HealthBar.yy",},},
+    {"id":{"name":"jump_boost","path":"sprites/jump_boost/jump_boost.yy",},},
     {"id":{"name":"obj_health_up","path":"objects/obj_health_up/obj_health_up.yy",},},
     {"id":{"name":"Guard2","path":"sprites/Guard2/Guard2.yy",},},
     {"id":{"name":"obj_controls","path":"objects/obj_controls/obj_controls.yy",},},
     {"id":{"name":"rmPause","path":"rooms/rmPause/rmPause.yy",},},
+    {"id":{"name":"speed_up","path":"sprites/speed_up/speed_up.yy",},},
     {"id":{"name":"Player1","path":"objects/Player1/Player1.yy",},},
     {"id":{"name":"heart","path":"sprites/heart/heart.yy",},},
     {"id":{"name":"HealthBackground","path":"sprites/HealthBackground/HealthBackground.yy",},},
@@ -93,6 +95,7 @@
     {"id":{"name":"spr_controlsButton","path":"sprites/spr_controlsButton/spr_controlsButton.yy",},},
     {"id":{"name":"Idle2","path":"sprites/Idle2/Idle2.yy",},},
     {"id":{"name":"obj_FinalDestination","path":"objects/obj_FinalDestination/obj_FinalDestination.yy",},},
+    {"id":{"name":"obj_jump_boost","path":"objects/obj_jump_boost/obj_jump_boost.yy",},},
     {"id":{"name":"spr_quitButton","path":"sprites/spr_quitButton/spr_quitButton.yy",},},
     {"id":{"name":"obj_controlsButton","path":"objects/obj_controlsButton/obj_controlsButton.yy",},},
     {"id":{"name":"Jumping2","path":"sprites/Jumping2/Jumping2.yy",},},
@@ -111,6 +114,7 @@
     {"id":{"name":"obj_overviewButton","path":"objects/obj_overviewButton/obj_overviewButton.yy",},},
     {"id":{"name":"Player2","path":"objects/Player2/Player2.yy",},},
     {"id":{"name":"Jumping","path":"sprites/Jumping/Jumping.yy",},},
+    {"id":{"name":"obj_speed_up","path":"objects/obj_speed_up/obj_speed_up.yy",},},
     {"id":{"name":"Platform","path":"sprites/Platform/Platform.yy",},},
   ],
   "RoomOrderNodes": [
