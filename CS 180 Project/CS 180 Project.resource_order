@@ -1,4 +1,6 @@
 {
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [],
   "FolderOrderSettings": [
     {"name":"Animation Curves","order":4,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":5,"path":"folders/Extensions.yy",},
