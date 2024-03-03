@@ -23,6 +23,7 @@
     {"name":"obj_platfomPos","order":10,"path":"objects/obj_platfomPos/obj_platfomPos.yy",},
     {"name":"HealthBar","order":11,"path":"sprites/HealthBar/HealthBar.yy",},
     {"name":"rmPause","order":1,"path":"rooms/rmPause/rmPause.yy",},
+    {"name":"speed_up","order":1,"path":"sprites/speed_up/speed_up.yy",},
     {"name":"HealthBackground","order":13,"path":"sprites/HealthBackground/HealthBackground.yy",},
     {"name":"spr_explanation","order":10,"path":"sprites/spr_explanation/spr_explanation.yy",},
     {"name":"StartMenu","order":3,"path":"rooms/StartMenu/StartMenu.yy",},
@@ -58,6 +59,7 @@
     {"name":"obj_overviewButton","order":2,"path":"objects/obj_overviewButton/obj_overviewButton.yy",},
     {"name":"Player2","order":1,"path":"objects/Player2/Player2.yy",},
     {"name":"Jumping","order":2,"path":"sprites/Jumping/Jumping.yy",},
+    {"name":"obj_speed_up","order":2,"path":"objects/obj_speed_up/obj_speed_up.yy",},
     {"name":"Platform","order":4,"path":"sprites/Platform/Platform.yy",},
   ],
 }
