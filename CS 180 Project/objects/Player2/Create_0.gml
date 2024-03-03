@@ -15,3 +15,8 @@ hp_height = 11;
 hp_x = (window_get_width())-(3 * hp_width);
 hp_y = (window_get_height()/5*4);
 
+dash_speed = 8; 
+dash_duration = 15;
+dash_cooldown = 60;
+dash_timer = 0;
+is_dashing = false;

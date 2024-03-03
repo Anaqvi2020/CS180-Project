@@ -87,6 +87,28 @@ if (place_meeting(x, y + _finalMoveY, obj_FinalDestination)) {
 	curr_jumps = 0;
 }
 
+if (keyboard_check(ord("N")) && dash_timer <= 0) {
+    is_dashing = true;
+    dash_timer = dash_duration + dash_cooldown; // Reset the dash timer
+}
+
+if (dash_timer > 0) {
+    dash_timer--;
+}
+
+if (is_dashing) {
+    // Use the player's facing direction or last movement direction for the dash
+    var dash_direction = sign(move_x); // Assuming move_x indicates direction; adjust as necessary
+    if (dash_direction == 0) dash_direction = 1; // Default to right if no movement
+    
+    _finalMoveX += dash_direction * dash_speed; // Apply dash speed to the movement
+    
+    // End the dash if the duration has elapsed
+    if (dash_timer <= dash_cooldown) {
+        is_dashing = false;
+    }
+}
+
 // Move
 x += _finalMoveX;
 y += _finalMoveY;
@@ -119,5 +141,8 @@ if keyboard_check(ord("M"))
 	keyboard_clear(vk_up);
 	keyboard_clear(vk_down);
 }
+
+
+
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
