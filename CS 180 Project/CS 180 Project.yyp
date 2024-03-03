@@ -58,6 +58,7 @@
   "resources": [
     {"id":{"name":"obj_platfomPos","path":"objects/obj_platfomPos/obj_platfomPos.yy",},},
     {"id":{"name":"HealthBar","path":"sprites/HealthBar/HealthBar.yy",},},
+    {"id":{"name":"jump_boost","path":"sprites/jump_boost/jump_boost.yy",},},
     {"id":{"name":"obj_health_up","path":"objects/obj_health_up/obj_health_up.yy",},},
     {"id":{"name":"obj_controls","path":"objects/obj_controls/obj_controls.yy",},},
     {"id":{"name":"rmPause","path":"rooms/rmPause/rmPause.yy",},},
@@ -91,6 +92,7 @@
     {"id":{"name":"spr_controlsButton","path":"sprites/spr_controlsButton/spr_controlsButton.yy",},},
     {"id":{"name":"Idle2","path":"sprites/Idle2/Idle2.yy",},},
     {"id":{"name":"obj_FinalDestination","path":"objects/obj_FinalDestination/obj_FinalDestination.yy",},},
+    {"id":{"name":"obj_jump_boost","path":"objects/obj_jump_boost/obj_jump_boost.yy",},},
     {"id":{"name":"spr_quitButton","path":"sprites/spr_quitButton/spr_quitButton.yy",},},
     {"id":{"name":"obj_controlsButton","path":"objects/obj_controlsButton/obj_controlsButton.yy",},},
     {"id":{"name":"Jumping2","path":"sprites/Jumping2/Jumping2.yy",},},
