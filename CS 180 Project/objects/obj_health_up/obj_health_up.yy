@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_FinalDestination",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-  ],
+  "name": "obj_health_up",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Environment",
-    "path": "folders/Objects/Environment.yy",
+    "name": "Power-Ups",
+    "path": "folders/Objects/Power-Ups.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_powerups_parent",
+    "path": "objects/obj_powerups_parent/obj_powerups_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "FinalDestination",
-    "path": "sprites/FinalDestination/FinalDestination.yy",
+    "name": "heart",
+    "path": "sprites/heart/heart.yy",
   },
   "spriteMaskId": null,
   "visible": true,
