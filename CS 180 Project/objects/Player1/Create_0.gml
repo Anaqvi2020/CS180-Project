@@ -7,8 +7,9 @@ move_y = 0;
 curr_jumps = 0;
 gravSpeed = 0.5;
 
+attack_damage = 10;
 
-hp = 80;
+hp = 100;
 hp_max = 100;
 hp_width = 100; //position and dimension of HP Bar
 hp_height = 11;
@@ -20,3 +21,4 @@ dash_duration = 15;
 dash_cooldown = 60;
 dash_timer = 0;
 is_dashing = false;
+is_attacking = false
