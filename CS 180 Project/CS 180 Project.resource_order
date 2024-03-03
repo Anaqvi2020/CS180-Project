@@ -16,6 +16,8 @@
     {"name":"UI","order":3,"path":"folders/Sprites/UI.yy",},
     {"name":"VFX","order":4,"path":"folders/Sprites/VFX.yy",},
     {"name":"Timelines","order":3,"path":"folders/Timelines.yy",},
+    {"name":"Power-Ups","order":6,"path":"folders/Objects/Power-Ups.yy",},
+    {"name":"PowerUps","order":17,"path":"folders/Sprites/PowerUps.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_platfomPos","order":10,"path":"objects/obj_platfomPos/obj_platfomPos.yy",},
@@ -45,6 +47,7 @@
     {"name":"spr_quitButton","order":4,"path":"sprites/spr_quitButton/spr_quitButton.yy",},
     {"name":"obj_controlsButton","order":3,"path":"objects/obj_controlsButton/obj_controlsButton.yy",},
     {"name":"Jumping2","order":2,"path":"sprites/Jumping2/Jumping2.yy",},
+    {"name":"obj_powerups_parent","order":1,"path":"objects/obj_powerups_parent/obj_powerups_parent.yy",},
     {"name":"Running2","order":1,"path":"sprites/Running2/Running2.yy",},
     {"name":"FinalDestination","order":5,"path":"sprites/FinalDestination/FinalDestination.yy",},
     {"name":"sfont_jasontomlee","order":14,"path":"sprites/sfont_jasontomlee/sfont_jasontomlee.yy",},
