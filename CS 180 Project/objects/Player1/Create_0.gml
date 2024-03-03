@@ -9,7 +9,7 @@ gravSpeed = 0.5;
 
 attack_damage = 10;
 
-hp = 80;
+hp = 100;
 hp_max = 100;
 hp_width = 100; //position and dimension of HP Bar
 hp_height = 11;

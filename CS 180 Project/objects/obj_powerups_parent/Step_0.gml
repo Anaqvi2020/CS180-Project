@@ -3,6 +3,8 @@
 
 y += fall_speed;
 
+depth = -1000;
+
 //show_debug_message(place_meeting(x, y + 10, obj_platform));
 if (place_meeting(x, y + 10, obj_platform)) {
 	var targetSpeed = 0;
