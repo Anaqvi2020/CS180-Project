@@ -88,7 +88,7 @@ if (place_meeting(x, y + _finalMoveY, obj_FinalDestination)) {
     curr_jumps = 0;
 }
 
-if (keyboard_check(ord("N")) && dash_timer <= 0) {
+if (keyboard_check(191) && dash_timer <= 0) {
     is_dashing = true;
 	sprite_index = Dash;
     dash_timer = dash_duration + dash_cooldown; // Reset the dash timer
@@ -114,16 +114,16 @@ if (is_dashing) {
 
 // Attack logic
 // Check for attack button using the key code for "X" (ord('X') or 88)
-if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
+if ((keyboard_check(188) || keyboard_check(ord("M"))) && !is_attacking) {
     // Set the attacking state
     is_attacking = true;
 	var attack_hitbox_offset = 90 * image_xscale;
-    if (keyboard_check(ord("X"))) {
+    if (keyboard_check(188)) {
         sprite_index = Attack;
 		attack_num = 1;
 		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box1);
 		inst.damage = attack_damage + 5;
-    } else if (keyboard_check(ord("F"))) {
+    } else if (keyboard_check(ord("M"))) {
         sprite_index = light_attack;
 		attack_num = 2;
 		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box2);
@@ -175,14 +175,14 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
 }
 
 // Guard logic
-if (keyboard_check(ord("M")))
+if (keyboard_check(190))
 {
     sprite_index = Guard;
     is_guarding = true;
 	move_speed = 0;
 	jump_speed = 0;
 }
-if (keyboard_check_released(ord("M")))
+if (keyboard_check_released(190))
 {
 	move_speed = 3;
 	jump_speed = 10;
@@ -197,10 +197,11 @@ if (stagger_timer > 0) {
 if (is_staggered) {
     sprite_index = hit;
 	image_xscale = (-stagger_direction);
+
     if (stagger_direction == 0) stagger_direction = 1; // Default to right if no movement
-    
+
     x += stagger_direction * (dash_speed/2);
-    
+
     // End the stagger if the duration has elapsed
     if (stagger_timer <= 0) {
         is_staggered = false;
