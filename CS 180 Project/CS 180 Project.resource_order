@@ -4,7 +4,7 @@
     {"name":"player2_hit_box2","order":3,"path":"objects/player2_hit_box2/player2_hit_box2.yy",},
     {"name":"player2_hit_box1","order":2,"path":"objects/player2_hit_box1/player2_hit_box1.yy",},
     {"name":"hit2","order":1,"path":"sprites/hit2/hit2.yy",},
-    {"name":"Sprite36","order":1,"path":"sprites/Sprite36/Sprite36.yy",},
+    {"name":"hit","order":1,"path":"sprites/hit/hit.yy",},
     {"name":"player1_hit_box2","order":1,"path":"objects/player1_hit_box2/player1_hit_box2.yy",},
   ],
 }
