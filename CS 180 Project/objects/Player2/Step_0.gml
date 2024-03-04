@@ -192,6 +192,23 @@ if (keyboard_check_released(ord("Y")))
 	sprite_index = Idle2;
 }
 
+// Stagger logic
+if (stagger_timer > 0) {
+    stagger_timer--;
+}
+if (is_staggered) {
+    sprite_index = hit2;
+	image_xscale = (-stagger_direction);
+    if (stagger_direction == 0) stagger_direction = 1; // Default to right if no movement
+    
+    x += stagger_direction * (dash_speed/2);
+    
+    // End the stagger if the duration has elapsed
+    if (stagger_timer <= 0) {
+        is_staggered = false;
+    }
+}
+
 if (hp == 0) {
 	lives_left -= 1;
 	hp = -1;

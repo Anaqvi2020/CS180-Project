@@ -23,8 +23,11 @@ dash_duration = 15;
 dash_cooldown = 60;
 dash_timer = 0;
 guard_stamina = 2; //how many attacks can the character guard against
+stagger_timer = 0;
+stagger_direction = 1;
 
 is_dashing = false;		//character states
 is_attacking = false;
 is_guarding = false;
+is_staggered = false;
 attack_num = 0;
