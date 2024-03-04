@@ -122,10 +122,12 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
         sprite_index = Attack;
 		attack_num = 1;
 		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box1);
+		inst.damage = attack_damage + 5;
     } else if (keyboard_check(ord("F"))) {
         sprite_index = light_attack;
 		attack_num = 2;
 		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box2);
+		inst.damage = attack_damage;
     }
     image_index = 0;
     // Set the hitbox offset based on the direction
@@ -187,6 +189,34 @@ if (keyboard_check_released(ord("M")))
 	is_guarding = false;
 	sprite_index = Idle;
 }
+
+if (hp == 0) {
+	lives_left -= 1;
+	hp = -1;
+	y = -10000
+	
+	if (lives_left >= 0) {
+		alarm[4] = room_speed * 2;
+	}
+	else {
+		room_goto(P2Win);
+	}
+}
+
+if (y > 800) {
+	lives_left -= 1;
+	hp = -1;
+	y = -10000
+	
+	if (lives_left >= 0) {
+		alarm[4] = room_speed * 2;
+	}
+	else {
+		room_goto(P2Win);
+	}
+}
+
+show_debug_message(lives_left);
 
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);

@@ -122,10 +122,12 @@ if ((keyboard_check(ord("C")) || keyboard_check(ord("V"))) && !is_attacking) {
         sprite_index = Attack2; // Use the Attack2 sprite for regular attack
 		attack_num = 1;
 		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player2_hit_box1)
+		inst.damage = attack_damage + 5;
     } else if (keyboard_check(ord("V"))) {
         sprite_index = light_attack2; // Use the light_attack2 sprite for light attack
 		attack_num = 2;
 		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player2_hit_box2)
+		inst.damage = attack_damage;
 	}
     image_index = 0;
     // Set the hitbox offset based on the direction
@@ -189,5 +191,33 @@ if (keyboard_check_released(ord("Y")))
 	is_guarding = false;
 	sprite_index = Idle2;
 }
+
+if (hp == 0) {
+	lives_left -= 1;
+	hp = -1;
+	y = -10000
+	
+	if (lives_left >= 0) {
+		alarm[4] = room_speed * 2;
+	}
+	else {
+		room_goto(P1Win);
+	}
+}
+
+if (y > 800) {
+	lives_left -= 1;
+	hp = -1;
+	y = -10000
+	
+	if (lives_left >= 0) {
+		alarm[4] = room_speed * 2;
+	}
+	else {
+		room_goto(P1Win);
+	}
+}
+
+
 
 // ... (remaining code)
