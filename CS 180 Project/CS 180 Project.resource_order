@@ -1,6 +1,11 @@
 {
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
+    {"name":"Attack2","order":3,"path":"sprites/Attack2/Attack2.yy",},
+    {"name":"light_attack2","order":1,"path":"sprites/light_attack2/light_attack2.yy",},
+    {"name":"light_attack","order":1,"path":"sprites/light_attack/light_attack.yy",},
+    {"name":"Sprite31","order":2,"path":"sprites/Sprite31/Sprite31.yy",},
+  "ResourceOrderSettings": [
     {"name":"Dash","order":1,"path":"sprites/Dash/Dash.yy",},
     {"name":"Dash2","order":1,"path":"sprites/Dash2/Dash2.yy",},
   "ResourceOrderSettings": [],
