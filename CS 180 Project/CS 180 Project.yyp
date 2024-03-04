@@ -111,7 +111,6 @@
     {"id":{"name":"FinalDestination","path":"sprites/FinalDestination/FinalDestination.yy",},},
     {"id":{"name":"sfont_jasontomlee","path":"sprites/sfont_jasontomlee/sfont_jasontomlee.yy",},},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
-    {"id":{"name":"Sprite31","path":"sprites/Sprite31/Sprite31.yy",},},
     {"id":{"name":"Portrait","path":"sprites/Portrait/Portrait.yy",},},
     {"id":{"name":"obj_quitButton","path":"objects/obj_quitButton/obj_quitButton.yy",},},
     {"id":{"name":"obj_overview","path":"objects/obj_overview/obj_overview.yy",},},
