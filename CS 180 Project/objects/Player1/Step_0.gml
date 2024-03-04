@@ -120,6 +120,7 @@ if (keyboard_check(ord("X")) && !is_attacking) {
     sprite_index = Attack;
     var attack_hitbox_offset = 90 * image_xscale; // Multiply by 1 or -1 based on direction
     var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box);
+	inst.damage = attack_damage;
 } else {
     // If attacking, check if the attack animation is complete
     if (is_attacking) {
