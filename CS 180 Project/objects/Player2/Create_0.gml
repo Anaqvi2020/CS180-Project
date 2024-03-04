@@ -7,6 +7,8 @@ move_y = 0;
 curr_jumps = 0;
 gravSpeed = 0.5;
 
+attack_damage = 10;
+
 hp = 100;
 hp_max = 100;
 
