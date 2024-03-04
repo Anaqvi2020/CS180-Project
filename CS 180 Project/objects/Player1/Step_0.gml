@@ -114,13 +114,13 @@ if (is_dashing) {
 
 // Attack logic
 // Check for attack button using the key code for "X" (ord('X') or 88)
-if ((keyboard_check(ord("V")) || keyboard_check(ord("B"))) && !is_attacking) {
+if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
     // Set the attacking state
     is_attacking = true;
     
-    if (keyboard_check(ord("V"))) {
+    if (keyboard_check(ord("X"))) {
         sprite_index = Attack;
-    } else if (keyboard_check(ord("B"))) {
+    } else if (keyboard_check(ord("F"))) {
         sprite_index = light_attack;
     }
     
