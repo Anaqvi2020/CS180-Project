@@ -114,10 +114,17 @@ if (is_dashing) {
 
 // Attack logic
 // Check for attack button using the key code for "X" (ord('X') or 88)
-if (keyboard_check(ord("X")) && !is_attacking) {
+if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
     // Set the attacking state
     is_attacking = true;
-    sprite_index = Attack;
+    
+    if (keyboard_check(ord("X"))) {
+        sprite_index = Attack;
+    } else if (keyboard_check(ord("F"))) {
+        sprite_index = light_attack;
+    }
+    
+    // Set the hitbox offset based on the direction
     var attack_hitbox_offset = 90 * image_xscale; // Multiply by 1 or -1 based on direction
     var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box);
 	inst.damage = attack_damage;
