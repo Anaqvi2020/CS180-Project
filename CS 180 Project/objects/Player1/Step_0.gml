@@ -167,12 +167,22 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
 // Guard logic
 if (keyboard_check(ord("M")))
 {
-    sprite_index = Guard;
-    keyboard_clear(vk_left);  // for now you can't move if you push direction
-    keyboard_clear(vk_right); // button before you release the guard key
-    keyboard_clear(vk_up);
-    keyboard_clear(vk_down);
+	is_guarding = true;
+	sprite_index = Guard;
 }
+if (is_guarding) {
+    move_speed = 0;
+	jump_speed = 0;
+    
+    // End guard when button is lifted
+    if (keyboard_check_released(ord("M"))) {
+        is_guarding = false;
+		move_speed = 3;
+		jump_speed = 10;
+    }
+}
+
+
 
 if (hp == 0) {
 	lives_left -= 1;

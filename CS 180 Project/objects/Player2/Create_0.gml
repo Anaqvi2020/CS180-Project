@@ -18,9 +18,12 @@ hp_height = 11;
 hp_x = (window_get_width())-(3 * hp_width);
 hp_y = (window_get_height()/5*4);
 
-dash_speed = 8; 
+dash_speed = 8;		//dash stats
 dash_duration = 15;
 dash_cooldown = 60;
 dash_timer = 0;
-is_dashing = false;
+guard_stamina = 2; //how many attacks can the character guard against
+
+is_dashing = false;		//character states
 is_attacking = false;
+is_guarding = false;
