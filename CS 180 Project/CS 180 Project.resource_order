@@ -1,6 +1,10 @@
 {
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
+    {"name":"P1Win","order":2,"path":"rooms/P1Win/P1Win.yy",},
+    {"name":"obj_P1Wins","order":2,"path":"objects/obj_P1Wins/obj_P1Wins.yy",},
+    {"name":"P2Win","order":1,"path":"rooms/P2Win/P2Win.yy",},
+    {"name":"obj_P2Wins","order":1,"path":"objects/obj_P2Wins/obj_P2Wins.yy",},
     {"name":"Attack2","order":3,"path":"sprites/Attack2/Attack2.yy",},
     {"name":"light_attack2","order":1,"path":"sprites/light_attack2/light_attack2.yy",},
     {"name":"light_attack","order":1,"path":"sprites/light_attack/light_attack.yy",},

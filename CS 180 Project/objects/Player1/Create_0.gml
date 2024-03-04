@@ -9,6 +9,7 @@ gravSpeed = 0.5;
 
 attack_damage = 10;
 
+lives_left = 3;
 hp = 100;
 hp_max = 100;
 hp_width = 100; //position and dimension of HP Bar

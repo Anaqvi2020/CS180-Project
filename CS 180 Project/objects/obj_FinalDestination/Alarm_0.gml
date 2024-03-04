@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 var pick = irandom_range(1, 4);
-show_debug_message(pick);
+//show_debug_message(pick);
 if (pick == 1) {
 	instance_create_layer(random_range(275, 1100), -50, "Instances", obj_speed_up);	
 }
