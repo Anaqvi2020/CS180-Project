@@ -146,5 +146,34 @@ if keyboard_check(ord("Y"))
 	keyboard_clear(ord("S"));
 	keyboard_clear(ord("D"));
 }
+
+if (hp == 0) {
+	lives_left -= 1;
+	hp = -1;
+	y = -10000
+	
+	if (lives_left >= 0) {
+		alarm[4] = room_speed * 2;
+	}
+	else {
+		room_goto(P1Win);
+	}
+}
+
+if (y > 800) {
+	lives_left -= 1;
+	hp = 0;
+	y = -10000
+	
+	if (lives_left >= 0) {
+		alarm[4] = room_speed * 2;
+	}
+	else {
+		room_goto(P1Win);
+	}
+}
+
+show_debug_message(lives_left);
+
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
