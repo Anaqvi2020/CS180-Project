@@ -91,6 +91,7 @@ if (place_meeting(x, y + _finalMoveY, obj_FinalDestination)) {
 
 if (keyboard_check(vk_shift) && dash_timer <= 0) {
     is_dashing = true;
+	sprite_index = Dash2;
     dash_timer = dash_duration + dash_cooldown; // Reset the dash timer
 }
 
@@ -154,17 +155,23 @@ if ((keyboard_check(ord("C")) || keyboard_check(ord("V"))) && !is_attacking) {
             move_y += gravSpeed;
         }
 
-        if (move_x != 0) {
-            image_xscale = sign(move_x);
-            if(move_y < 0) {
-                sprite_index = Jumping2;
-            } else {
-                sprite_index = Running2;
-            }
-        } else {
-            sprite_index = Idle2;
-        }
-    }
+		if (move_x != 0) {
+		   image_xscale = sign(move_x);
+		    if(move_y < 0) {
+				if(is_dashing != true) {
+					sprite_index = Jumping2;
+				}
+		    } else {
+				if(is_dashing != true) {
+					sprite_index = Running2
+				}
+		    }
+		 } else {
+			if( is_dashing != true) {
+				sprite_index = Idle2;
+		  }
+		}
+	}
 }
 
 // Guard logic
