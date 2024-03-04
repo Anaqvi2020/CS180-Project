@@ -98,7 +98,6 @@ if (dash_timer > 0) {
     dash_timer--;
 }
 
-
 if (is_dashing) {
     // Use the player's facing direction or last movement direction for the dash
     var dash_direction = sign(move_x); // Assuming move_x indicates direction; adjust as necessary
@@ -109,7 +108,14 @@ if (is_dashing) {
     // End the dash if the duration has elapsed
     if (dash_timer <= dash_cooldown) {
         is_dashing = false;
+		if (place_meeting(x, y + 1, obj_platform)) {
+            // Correct position if slightly in the ground
+            while (place_meeting(x, y, obj_platform)) {
+                y -= 1; // Move up
+            }
+        }
     }
+	
 }
 
 // Attack logic
@@ -154,12 +160,18 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
         if (move_x != 0) {
             image_xscale = sign(move_x);
             if(move_y < 0) {
-                sprite_index = Jumping;
+				if(is_dashing != true) {
+					sprite_index = Jumping;
+				}
             } else {
-                sprite_index = Running;
+				if(is_dashing != true) {
+					sprite_index = Running
+				}
             }
         } else {
-            sprite_index = Idle;
+			if( is_dashing != true) {
+				sprite_index = Idle;
+			}
         }
     }
 }
@@ -167,22 +179,12 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
 // Guard logic
 if (keyboard_check(ord("M")))
 {
-	is_guarding = true;
-	sprite_index = Guard;
+    sprite_index = Guard;
+    keyboard_clear(vk_left);  // for now you can't move if you push direction
+    keyboard_clear(vk_right); // button before you release the guard key
+    keyboard_clear(vk_up);
+    keyboard_clear(vk_down);
 }
-if (is_guarding) {
-    move_speed = 0;
-	jump_speed = 0;
-    
-    // End guard when button is lifted
-    if (keyboard_check_released(ord("M"))) {
-        is_guarding = false;
-		move_speed = 3;
-		jump_speed = 10;
-    }
-}
-
-
 
 if (hp == 0) {
 	lives_left -= 1;

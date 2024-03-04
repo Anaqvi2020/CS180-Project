@@ -91,6 +91,7 @@ if (place_meeting(x, y + _finalMoveY, obj_FinalDestination)) {
 
 if (keyboard_check(vk_shift) && dash_timer <= 0) {
     is_dashing = true;
+	sprite_index = Dash2;
     dash_timer = dash_duration + dash_cooldown; // Reset the dash timer
 }
 
@@ -148,36 +149,33 @@ if ((keyboard_check(ord("C")) || keyboard_check(ord("V"))) && !is_attacking) {
         if (move_y < 10) {
             move_y += gravSpeed;
         }
-
-        if (move_x != 0) {
-            image_xscale = sign(move_x);
-            if(move_y < 0) {
-                sprite_index = Jumping2;
-            } else {
-                sprite_index = Running2;
-            }
-        } else {
-            sprite_index = Idle2;
-        }
-    }
+		 if (move_x != 0) {
+		            image_xscale = sign(move_x);
+		            if(move_y < 0) {
+						if(is_dashing != true) {
+							sprite_index = Jumping2;
+						}
+		            } else {
+						if(is_dashing != true) {
+							sprite_index = Running2
+						}
+		            }
+		        } else {
+					if( is_dashing != true) {
+						sprite_index = Idle2;
+					}
+		        }
+		    }
 }
 
 // Guard logic
 if (keyboard_check(ord("Y")))
 {
-	is_guarding = true;
-	sprite_index = Guard2;
-}
-if (is_guarding) {
-    move_speed = 0;
-	jump_speed = 0;
-    
-    // End guard when button is lifted
-    if (keyboard_check_released(ord("Y"))) {
-        is_guarding = false;
-		move_speed = 3;
-		jump_speed = 10;
-    }
+    sprite_index = Guard2;
+    keyboard_clear(ord("W"));  // for now you can't move if you push direction
+    keyboard_clear(ord("A"));  // button before you release the guard key
+    keyboard_clear(ord("S"));
+    keyboard_clear(ord("D"));
 }
 
 if (hp == 0) {
