@@ -156,15 +156,21 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
         }
 
         if (move_x != 0) {
-            image_xscale = sign(move_x);
-            if(move_y < 0) {
-                sprite_index = Jumping;
-            } else {
-                sprite_index = Running;
-            }
-        } else {
-            sprite_index = Idle;
-        }
+		   image_xscale = sign(move_x);
+		    if(move_y < 0) {
+				if(is_dashing != true) {
+					sprite_index = Jumping;
+				}
+		    } else {
+				if(is_dashing != true) {
+					sprite_index = Running
+				}
+		    }
+		 } else {
+			if( is_dashing != true) {
+				sprite_index = Idle;
+		  }
+		}
     }
 }
 
@@ -172,10 +178,16 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
 if (keyboard_check(ord("M")))
 {
     sprite_index = Guard;
-    keyboard_clear(vk_left);  // for now you can't move if you push direction
-    keyboard_clear(vk_right); // button before you release the guard key
-    keyboard_clear(vk_up);
-    keyboard_clear(vk_down);
+    is_guarding = true;
+	move_speed = 0;
+	jump_speed = 0;
+}
+if (keyboard_check_released(ord("M")))
+{
+	move_speed = 3;
+	jump_speed = 10;
+	is_guarding = false;
+	sprite_index = Idle;
 }
 
 if (hp == 0) {
