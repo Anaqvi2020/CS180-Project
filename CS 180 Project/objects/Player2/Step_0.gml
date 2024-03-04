@@ -113,13 +113,13 @@ if (is_dashing) {
 
 // Attack logic
 // Check for attack button using the key codes for "C" (ord('C') or 67) and "V" (ord('V') or 86)
-if ((keyboard_check(ord("C")) || keyboard_check(ord("V"))) && !is_attacking) {
+if ((keyboard_check(ord("Y")) || keyboard_check(ord("U"))) && !is_attacking) {
     // Set the attacking state
     is_attacking = true;
     
-    if (keyboard_check(ord("C"))) {
+    if (keyboard_check(ord("Y"))) {
         sprite_index = Attack2; // Use the Attack2 sprite for regular attack
-    } else if (keyboard_check(ord("V"))) {
+    } else if (keyboard_check(ord("U"))) {
         sprite_index = light_attack2; // Use the light_attack2 sprite for light attack
     }
     
@@ -163,7 +163,7 @@ if ((keyboard_check(ord("C")) || keyboard_check(ord("V"))) && !is_attacking) {
 }
 
 // Guard logic
-if (keyboard_check(ord("Y")))
+if (keyboard_check(ord("T")))
 {
     sprite_index = Guard2;
     keyboard_clear(ord("W"));  // for now you can't move if you push direction
