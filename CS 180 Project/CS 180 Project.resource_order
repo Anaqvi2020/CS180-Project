@@ -1,4 +1,9 @@
 {
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"Dash","order":1,"path":"sprites/Dash/Dash.yy",},
+    {"name":"Dash2","order":1,"path":"sprites/Dash2/Dash2.yy",},
+  "ResourceOrderSettings": [],
   "FolderOrderSettings": [
     {"name":"Animation Curves","order":4,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":5,"path":"folders/Extensions.yy",},
