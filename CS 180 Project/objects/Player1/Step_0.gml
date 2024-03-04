@@ -117,17 +117,18 @@ if (is_dashing) {
 if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
     // Set the attacking state
     is_attacking = true;
-    
+	var attack_hitbox_offset = 90 * image_xscale;
     if (keyboard_check(ord("X"))) {
         sprite_index = Attack;
+		attack_num = 1;
+		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box1);
     } else if (keyboard_check(ord("F"))) {
         sprite_index = light_attack;
+		attack_num = 2;
+		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box2);
     }
-    
+    image_index = 0;
     // Set the hitbox offset based on the direction
-    var attack_hitbox_offset = 90 * image_xscale; // Multiply by 1 or -1 based on direction
-    var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box);
-	inst.damage = attack_damage;
 } else {
     // If attacking, check if the attack animation is complete
     if (is_attacking) {
@@ -135,7 +136,8 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
             // Reset to the idle state after the attack animation is complete
             sprite_index = Idle;
             is_attacking = false;
-            instance_destroy(player1_hit_box);
+            if (attack_num = 1){instance_destroy(player1_hit_box1);}
+			else if (attack_num = 2){instance_destroy(player1_hit_box2);}
         } else {
             // If the attack animation is still playing, do not allow further input
             _finalMoveX = 0;
@@ -167,47 +169,11 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
 // Guard logic
 if (keyboard_check(ord("M")))
 {
-	is_guarding = true;
-	sprite_index = Guard;
-}
-if (is_guarding) {
-    move_speed = 0;
-	jump_speed = 0;
-    
-    // End guard when button is lifted
-    if (keyboard_check_released(ord("M"))) {
-        is_guarding = false;
-		move_speed = 3;
-		jump_speed = 10;
-    }
-}
-
-
-
-if (hp == 0) {
-	lives_left -= 1;
-	hp = -1;
-	y = -10000
-	
-	if (lives_left >= 0) {
-		alarm[4] = room_speed * 2;
-	}
-	else {
-		room_goto(P2Win);
-	}
-}
-
-if (y > 800) {
-	lives_left -= 1;
-	hp = 0;
-	y = -10000
-	
-	if (lives_left >= 0) {
-		alarm[4] = room_speed * 2;
-	}
-	else {
-		room_goto(P2Win);
-	}
+    sprite_index = Guard;
+    keyboard_clear(vk_left);  // for now you can't move if you push direction
+    keyboard_clear(vk_right); // button before you release the guard key
+    keyboard_clear(vk_up);
+    keyboard_clear(vk_down);
 }
 
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
