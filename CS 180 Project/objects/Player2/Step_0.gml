@@ -116,15 +116,19 @@ if (is_dashing) {
 if ((keyboard_check(ord("C")) || keyboard_check(ord("V"))) && !is_attacking) {
     // Set the attacking state
     is_attacking = true;
-    
+    var attack_hitbox_offset = 90 * image_xscale; 
     if (keyboard_check(ord("C"))) {
         sprite_index = Attack2; // Use the Attack2 sprite for regular attack
+		attack_num = 1;
+		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player2_hit_box1)
     } else if (keyboard_check(ord("V"))) {
         sprite_index = light_attack2; // Use the light_attack2 sprite for light attack
-    }
-    
+		attack_num = 2;
+		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player2_hit_box2)
+	}
+    image_index = 0;
     // Set the hitbox offset based on the direction
-    var attack_hitbox_offset = 90 * image_xscale; // Multiply by 1 or -1 based on direction
+    // Multiply by 1 or -1 based on direction
     //var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player2_hit_box);
 } else {
     // If attacking, check if the attack animation is complete
@@ -133,7 +137,8 @@ if ((keyboard_check(ord("C")) || keyboard_check(ord("V"))) && !is_attacking) {
             // Reset to the idle state after the attack animation is complete
             sprite_index = Idle2;
             is_attacking = false;
-            //instance_destroy(player2_hit_box);
+            if (attack_num = 1){instance_destroy(player2_hit_box1);}
+			else if (attack_num = 2){instance_destroy(player2_hit_box2);}
         } else {
             // If the attack animation is still playing, do not allow further input
             _finalMoveX = 0;
@@ -165,48 +170,11 @@ if ((keyboard_check(ord("C")) || keyboard_check(ord("V"))) && !is_attacking) {
 // Guard logic
 if (keyboard_check(ord("Y")))
 {
-	is_guarding = true;
-	sprite_index = Guard2;
-}
-if (is_guarding) {
-    move_speed = 0;
-	jump_speed = 0;
-    
-    // End guard when button is lifted
-    if (keyboard_check_released(ord("Y"))) {
-        is_guarding = false;
-		move_speed = 3;
-		jump_speed = 10;
-    }
+    sprite_index = Guard2;
+    keyboard_clear(ord("W"));  // for now you can't move if you push direction
+    keyboard_clear(ord("A"));  // button before you release the guard key
+    keyboard_clear(ord("S"));
+    keyboard_clear(ord("D"));
 }
 
-if (hp == 0) {
-	lives_left -= 1;
-	hp = -1;
-	y = -10000
-	
-	if (lives_left >= 0) {
-		alarm[4] = room_speed * 2;
-	}
-	else {
-		room_goto(P1Win);
-	}
-}
-
-if (y > 800) {
-	lives_left -= 1;
-	hp = 0;
-	y = -10000
-	
-	if (lives_left >= 0) {
-		alarm[4] = room_speed * 2;
-	}
-	else {
-		room_goto(P1Win);
-	}
-}
-
-show_debug_message(lives_left);
-
-//move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
-//move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
+// ... (remaining code)

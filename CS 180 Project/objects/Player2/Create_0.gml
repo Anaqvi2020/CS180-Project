@@ -27,3 +27,4 @@ guard_stamina = 2; //how many attacks can the character guard against
 is_dashing = false;		//character states
 is_attacking = false;
 is_guarding = false;
+attack_num = 0;
