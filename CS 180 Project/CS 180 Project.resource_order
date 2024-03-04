@@ -1,4 +1,7 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"hit2","order":1,"path":"sprites/hit2/hit2.yy",},
+    {"name":"Sprite36","order":1,"path":"sprites/Sprite36/Sprite36.yy",},
+  ],
 }
