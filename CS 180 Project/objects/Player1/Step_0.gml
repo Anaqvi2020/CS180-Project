@@ -117,16 +117,18 @@ if (is_dashing) {
 if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
     // Set the attacking state
     is_attacking = true;
-    
+	var attack_hitbox_offset = 90 * image_xscale;
     if (keyboard_check(ord("X"))) {
         sprite_index = Attack;
+		attack_num = 1;
+		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box1);
     } else if (keyboard_check(ord("F"))) {
         sprite_index = light_attack;
+		attack_num = 2;
+		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box2);
     }
-    
+    image_index = 0;
     // Set the hitbox offset based on the direction
-    var attack_hitbox_offset = 90 * image_xscale; // Multiply by 1 or -1 based on direction
-    var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box);
 } else {
     // If attacking, check if the attack animation is complete
     if (is_attacking) {
@@ -134,7 +136,8 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
             // Reset to the idle state after the attack animation is complete
             sprite_index = Idle;
             is_attacking = false;
-            instance_destroy(player1_hit_box);
+            if (attack_num = 1){instance_destroy(player1_hit_box1);}
+			else if (attack_num = 2){instance_destroy(player1_hit_box2);}
         } else {
             // If the attack animation is still playing, do not allow further input
             _finalMoveX = 0;
