@@ -170,10 +170,16 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
 if (keyboard_check(ord("M")))
 {
     sprite_index = Guard;
-    keyboard_clear(vk_left);  // for now you can't move if you push direction
-    keyboard_clear(vk_right); // button before you release the guard key
-    keyboard_clear(vk_up);
-    keyboard_clear(vk_down);
+    is_guarding = true;
+	move_speed = 0;
+	jump_speed = 0;
+}
+if (keyboard_check_released(ord("M")))
+{
+	move_speed = 3;
+	jump_speed = 10;
+	is_guarding = false;
+	sprite_index = Idle;
 }
 
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
