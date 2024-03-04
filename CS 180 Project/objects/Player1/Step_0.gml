@@ -90,12 +90,14 @@ if (place_meeting(x, y + _finalMoveY, obj_FinalDestination)) {
 
 if (keyboard_check(ord("N")) && dash_timer <= 0) {
     is_dashing = true;
+	sprite_index = Dash;
     dash_timer = dash_duration + dash_cooldown; // Reset the dash timer
 }
 
 if (dash_timer > 0) {
     dash_timer--;
 }
+
 
 if (is_dashing) {
     // Use the player's facing direction or last movement direction for the dash
