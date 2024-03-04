@@ -154,15 +154,21 @@ if ((keyboard_check(ord("X")) || keyboard_check(ord("F"))) && !is_attacking) {
         }
 
         if (move_x != 0) {
-            image_xscale = sign(move_x);
-            if(move_y < 0) {
-                sprite_index = Jumping;
-            } else {
-                sprite_index = Running;
-            }
-        } else {
-            sprite_index = Idle;
-        }
+		   image_xscale = sign(move_x);
+		    if(move_y < 0) {
+				if(is_dashing != true) {
+					sprite_index = Jumping;
+				}
+		    } else {
+				if(is_dashing != true) {
+					sprite_index = Running
+				}
+		    }
+		 } else {
+			if( is_dashing != true) {
+				sprite_index = Idle;
+		  }
+		}
     }
 }
 
