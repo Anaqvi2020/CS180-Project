@@ -136,9 +136,10 @@ if ((keyboard_check(ord("V")) || keyboard_check(ord("C"))) && !is_attacking) {
 } else {
     // If attacking, check if the attack animation is complete
     if (is_attacking) {
-        if (image_index == image_number) {
+        if (image_index == image_number || is_staggered) {
             // Reset to the idle state after the attack animation is complete
-            sprite_index = Idle2;
+			// ... or got interrupted by another attack
+            if (image_index == image_number) sprite_index = Idle2;
             is_attacking = false;
             if (attack_num = 1){instance_destroy(player2_hit_box1);}
 			else if (attack_num = 2){instance_destroy(player2_hit_box2);}
@@ -206,6 +207,7 @@ if (is_staggered) {
     // End the stagger if the duration has elapsed
     if (stagger_timer <= 0) {
         is_staggered = false;
+		sprite_index = Idle2;
     }
 }
 
