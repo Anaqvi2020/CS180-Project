@@ -1,3 +1,5 @@
+/// @description Player Logic
+
 // Regular movement logic
 move_x = inputX;
 move_x *= move_speed;

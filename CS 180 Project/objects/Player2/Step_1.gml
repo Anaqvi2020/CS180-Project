@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Player2 Controls
 // You can write your code in this editor
 inputX = keyboard_check(ord("D")) - keyboard_check(ord("A"))
 inputUp = keyboard_check_pressed(ord("W"))

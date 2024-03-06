@@ -1,3 +1,4 @@
+/// @description Player variables
 move_speed = 3;
 jump_speed = 10;
 

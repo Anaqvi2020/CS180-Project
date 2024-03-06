@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Player1 Controls
 // You can write your code in this editor
 inputX = keyboard_check(vk_right) - keyboard_check(vk_left)
 inputUp = keyboard_check_pressed(vk_up)
