@@ -114,16 +114,16 @@ if (is_dashing) {
 
 // Attack logic
 // Check for attack button using the key code for "X" (ord('X') or 88)
-if ((keyboard_check(188) || keyboard_check(ord("M"))) && !is_attacking) {
+if ((keyboard_check_pressed(188) || keyboard_check_pressed(ord("M"))) && !is_attacking) {
     // Set the attacking state
     is_attacking = true;
 	var attack_hitbox_offset = 90 * image_xscale;
-    if (keyboard_check(188)) {
+    if (keyboard_check_pressed(188)) {
         sprite_index = Attack;
 		attack_num = 1;
 		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box1);
 		inst.damage = attack_damage + 5;
-    } else if (keyboard_check(ord("M"))) {
+    } else if (keyboard_check_pressed(ord("M"))) {
         sprite_index = light_attack;
 		attack_num = 2;
 		var inst = instance_create_layer(x + attack_hitbox_offset, y + 60, "Instances", player1_hit_box2);
