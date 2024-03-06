@@ -178,19 +178,19 @@ if ((inputAttack || inputLightAttack) && !is_attacking) {
 }
 
 // Guard logic
-if (inputGuard)
+if (inputGuard && !is_attacking && !is_staggered)
 {
     sprite_index = guardSprite;
     is_guarding = true;
 	move_speed = 0;
 	jump_speed = 0;
 }
-if (inputGuardRelease)
+if (inputGuardRelease && !is_attacking)
 {
 	move_speed = 3;
 	jump_speed = 10;
 	is_guarding = false;
-	sprite_index = idleSprite;
+	if(stagger_timer == 0){sprite_index = idleSprite;}
 }
 
 // Stagger logic
@@ -198,16 +198,17 @@ if (stagger_timer > 0) {
     stagger_timer--;
 }
 if (is_staggered) {
-    sprite_index = hitSprite;
+	if(!is_guarding) {sprite_index = hitSprite;}
+	else if (is_guarding) {sprite_index = guardSprite;}
 	image_xscale = (-stagger_direction);
-    if (stagger_direction == 0) stagger_direction = 1; // Default to right if no movement
+    if (stagger_direction == 0) {stagger_direction = 1;} // Default to right if no movement
 
     x += stagger_direction * (dash_speed/2);
 
     // End the stagger if the duration has elapsed
     if (stagger_timer <= 0) {
         is_staggered = false;
-		sprite_index = idleSprite;
+		if(!is_guarding) {sprite_index = idleSprite;}
     }
 }
 
