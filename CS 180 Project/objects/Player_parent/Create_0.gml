@@ -31,3 +31,27 @@ is_attacking = false;
 is_guarding = false;
 is_staggered = false;
 attack_num = 0;
+
+//Inputs
+inputX = 0
+inputUp = 0
+inputDown = 0
+inputDash = 0
+inputAttack = 0
+inputLightAttack = 0
+inputGuard = 0
+inputGuardRelease = 0
+
+//attack hitboxes
+hitbox1 = 0
+hitbox2 = 0
+
+//sprites
+dashSprite = 0
+attackSprite = 0
+lightAttackSprite = 0
+idleSprite = 0
+jumpSprite = 0
+runSprite = 0
+guardSprite = 0
+hitSprite = 0
