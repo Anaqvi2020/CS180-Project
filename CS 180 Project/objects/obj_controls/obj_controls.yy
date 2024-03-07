@@ -1,11 +1,14 @@
 {
   "$GMObject":"",
   "%Name":"obj_controls",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_controls",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},"propertyId":{"name":"text","path":"objects/obj_text_parent/obj_text_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Player 1:\\nWASD for movement\\n\\nPlayer 2:\\nArrow Keys for movement",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},"propertyId":{"name":"text","path":"objects/obj_text_parent/obj_text_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Player 1:\\nWASD: Movement\\nC: Light Attack\\nV: Heavy Attack\\nB: Guard\\nN: Dash\\n\\nPlayer 2:\\nArrow Keys: Movement\\n/ (Slash): Light Attack\\n. (Period): Heavy Attack\\n, (Comma): Guard\\nM: Dash",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},"propertyId":{"name":"font","path":"objects/obj_text_parent/obj_text_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fnt_controls",},
   ],
   "parent":{
     "name":"Text",

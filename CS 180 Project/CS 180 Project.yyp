@@ -57,7 +57,11 @@
   },
   "name":"CS 180 Project",
   "resources":[
+    {"id":{"name":"fnt_controls","path":"fonts/fnt_controls/fnt_controls.yy",},},
+    {"id":{"name":"fnt_overview","path":"fonts/fnt_overview/fnt_overview.yy",},},
+    {"id":{"name":"fnt_menu_bold","path":"fonts/fnt_menu_bold/fnt_menu_bold.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
+    {"id":{"name":"fnt_small_bold","path":"fonts/fnt_small_bold/fnt_small_bold.yy",},},
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
     {"id":{"name":"Documentation","path":"notes/Documentation/Documentation.yy",},},
     {"id":{"name":"obj_attack_up","path":"objects/obj_attack_up/obj_attack_up.yy",},},

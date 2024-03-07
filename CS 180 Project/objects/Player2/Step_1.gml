@@ -1,13 +1,13 @@
 /// @description Player2 Controls
 // You can write your code in this editor
-inputX = keyboard_check(ord("D")) - keyboard_check(ord("A"))
-inputUp = keyboard_check_pressed(ord("W"))
-inputDown = keyboard_check_pressed(ord("S"))
-inputDash = keyboard_check(ord("N"))
-inputAttack = keyboard_check_pressed(ord("V"))
-inputLightAttack = keyboard_check_pressed(ord("C"))
-inputGuard = keyboard_check(ord("B"))
-inputGuardRelease = keyboard_check_released(ord("B"))
+inputX = keyboard_check(vk_right) - keyboard_check(vk_left)
+inputUp = keyboard_check_pressed(vk_up)
+inputDown = keyboard_check_pressed(vk_down)
+inputDash = keyboard_check(ord("M"))
+inputAttack = keyboard_check_pressed(190)
+inputLightAttack = keyboard_check_pressed(191)
+inputGuard = keyboard_check(188)
+inputGuardRelease = keyboard_check_released(188)
 
 //attack hitboxes
 hitbox1 = player2_hit_box1
