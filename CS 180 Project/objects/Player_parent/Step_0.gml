@@ -90,7 +90,7 @@ if (place_meeting(x, y + _finalMoveY, obj_FinalDestination)) {
     curr_jumps = 0;
 }
 
-if (inputDash && dash_timer <= 0) {
+if (inputDash && dash_timer <= 0 && !is_attacking) {
     is_dashing = true;
 	sprite_index = dashSprite;
     dash_timer = dash_duration + dash_cooldown; // Reset the dash timer
