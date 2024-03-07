@@ -5,7 +5,8 @@
   "managed":true,
   "name":"obj_overview",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},"propertyId":{"name":"text","path":"objects/obj_text_parent/obj_text_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Our game is a 2D fighting game inspired by Super Smash Bros. Each player has 3 stocks, or lives, and must knock the other players off the arena with attacks. Helpful pickups that either player can use will drop into the arena. The last player standing wins!",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},"propertyId":{"name":"text","path":"objects/obj_text_parent/obj_text_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Our game is a 2D fighting game inspired by Super Smash Bros. Each player has 3 lives and must kill or knock the other players off the arena with light or heavy attacks, while defending themselves with guards and dashes. Helpful pickups that either player can use will drop into the arena, such as health and damage boosts. The last player standing wins!",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},"propertyId":{"name":"font","path":"objects/obj_text_parent/obj_text_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fnt_overview",},
   ],
   "parent":{
     "name":"Text",

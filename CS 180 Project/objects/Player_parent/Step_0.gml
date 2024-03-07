@@ -103,7 +103,7 @@ if (dash_timer > 0) {
 
 if (is_dashing) {
     // Use the player's facing direction or last movement direction for the dash
-    var dash_direction = sign(move_x); // Assuming move_x indicates direction; adjust as necessary
+    var dash_direction = image_xscale; // Assuming move_x indicates direction; adjust as necessary
     if (dash_direction == 0) dash_direction = 1; // Default to right if no movement
     
     _finalMoveX += dash_direction * dash_speed; // Apply dash speed to the movement
@@ -216,7 +216,7 @@ if (hp == 0 || y > 800) {
 	hp = -1;
 	y = -10000
 	
-	if (lives_left >= 0) {
+	if (lives_left > 0) {
 		alarm[4] = room_speed * 2;
 	}
 	else {
@@ -228,7 +228,7 @@ if (hp == 0 || y > 800) {
 	}
 }
 
-show_debug_message(lives_left);
+//show_debug_message(lives_left);
 
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
 //move_and_collide(move_x, move_y, obj_FinalDestination, 2, 0, 0, move_speed, -1);
