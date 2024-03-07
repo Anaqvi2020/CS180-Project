@@ -3,13 +3,19 @@
 
 instance_destroy(other);
 
-if (hp - other.damage < 0) {
+var finalDamage;
+
+if (is_guarding) {finalDamage = other.damage / 3;}
+else {finalDamage = other.damage;}
+
+
+if (hp - finalDamage < 0) {
 	hp = 0;
 }
 else {
-	hp -= other.damage;
+	hp -= finalDamage;
 }
 
-stagger_timer = other.damage*2.5;
+stagger_timer = finalDamage*2.5;
 is_staggered = true;
 stagger_direction = sign(x-Player1.x);
