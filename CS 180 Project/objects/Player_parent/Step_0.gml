@@ -105,12 +105,15 @@ if (dash_timer > 0) {
 
 
 if (is_dashing) {
+	show_debug_message(is_dashing);
+	show_debug_message(is_guarding);
+	show_debug_message(is_attacking);
     // Use the player's facing direction or last movement direction for the dash
     var dash_direction = image_xscale; // Assuming move_x indicates direction; adjust as necessary
     if (dash_direction == 0) dash_direction = 1; // Default to right if no movement
     
 	if (place_meeting(x + dash_direction * dash_speed, y - 1, obj_FinalDestination)) {
-		while (!place_meeting(x + sign(dash_direction * dash_speed), y, obj_FinalDestination)) {
+		while (!place_meeting(x + sign(dash_direction * dash_speed), y - 1, obj_FinalDestination)) {
 			x += sign(dash_direction * dash_speed);
 		}
 		_finalMoveX = 0;
@@ -126,7 +129,7 @@ if (is_dashing) {
 
 // Attack logic
 // Check for attack button using the key code for "X" (ord('X') or 88)
-if ((inputAttack || inputLightAttack) && !is_attacking) {
+if ((inputAttack || inputLightAttack) && !is_attacking && !is_dashing && !is_guarding && !is_staggered) {
     // Set the attacking state
     is_attacking = true;
 	var attack_hitbox_offset = 90 * image_xscale;
