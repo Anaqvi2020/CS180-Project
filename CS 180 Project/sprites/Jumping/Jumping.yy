@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"Jumping",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":109,
   "bbox_left":37,
   "bbox_right":100,
-  "bbox_top":22,
+  "bbox_top":24,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

@@ -2,16 +2,16 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"fnt_controls","order":3,"path":"fonts/fnt_controls/fnt_controls.yy",},
-    {"name":"fnt_overview","order":4,"path":"fonts/fnt_overview/fnt_overview.yy",},
     {"name":"fnt_menu_bold","order":2,"path":"fonts/fnt_menu_bold/fnt_menu_bold.yy",},
+    {"name":"fnt_overview","order":4,"path":"fonts/fnt_overview/fnt_overview.yy",},
     {"name":"fnt_small_bold","order":1,"path":"fonts/fnt_small_bold/fnt_small_bold.yy",},
     {"name":"Player_parent","order":1,"path":"objects/Player_parent/Player_parent.yy",},
     {"name":"player1_hit_box2","order":1,"path":"objects/player1_hit_box2/player1_hit_box2.yy",},
     {"name":"player2_hit_box1","order":2,"path":"objects/player2_hit_box1/player2_hit_box1.yy",},
     {"name":"player2_hit_box2","order":3,"path":"objects/player2_hit_box2/player2_hit_box2.yy",},
     {"name":"Death","order":2,"path":"sprites/Death/Death.yy",},
+    {"name":"Death2","order":2,"path":"sprites/Death2/Death2.yy",},
     {"name":"hit","order":1,"path":"sprites/hit/hit.yy",},
     {"name":"hit2","order":1,"path":"sprites/hit2/hit2.yy",},
-    {"name":"Death2","order":2,"path":"sprites/Death2/Death2.yy",},
   ],
 }

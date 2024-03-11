@@ -76,6 +76,7 @@ if (place_meeting(x + _finalMoveX, y, obj_FinalDestination))
     while (!place_meeting(x + sign(_finalMoveX), y, obj_FinalDestination)) {
         x += sign(_finalMoveX);
     }
+	_finalMoveX = 0;
 }
 
 // y
@@ -87,7 +88,9 @@ if (place_meeting(x, y + _finalMoveY, obj_FinalDestination)) {
     _finalMoveY = 0;
     //reset gravity
     move_y = 0;
-    curr_jumps = 0;
+	if (y < obj_FinalDestination.y) {
+		curr_jumps = 0;
+	}
 }
 
 if (inputDash && dash_timer <= 0 && !is_attacking) {
@@ -106,8 +109,15 @@ if (is_dashing) {
     var dash_direction = image_xscale; // Assuming move_x indicates direction; adjust as necessary
     if (dash_direction == 0) dash_direction = 1; // Default to right if no movement
     
-    _finalMoveX += dash_direction * dash_speed; // Apply dash speed to the movement
-    
+	if (place_meeting(x + dash_direction * dash_speed, y - 1, obj_FinalDestination)) {
+		while (!place_meeting(x + sign(dash_direction * dash_speed), y, obj_FinalDestination)) {
+			x += sign(dash_direction * dash_speed);
+		}
+		_finalMoveX = 0;
+	} else {
+		_finalMoveX += dash_direction * dash_speed; // Apply dash speed to the movement
+	}
+	
     // End the dash if the duration has elapsed
     if (dash_timer <= dash_cooldown) {
         is_dashing = false;
