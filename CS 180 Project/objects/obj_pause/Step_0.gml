@@ -4,7 +4,8 @@
 ////////////////////////////////////////////////////////////////////////////
 
 ///		Place inputs here		///
-var kPause		= keyboard_check_pressed( vk_escape );
+var kPauseEsc		= keyboard_check_pressed( vk_escape );
+var kPauseP		= keyboard_check_pressed( ord("P") );
 var kDown		= (mouse_wheel_down() || keyboard_check_pressed( vk_down )  );
 var kUp			= (mouse_wheel_up() || keyboard_check_pressed( vk_up ) );
 var kConfirm	= (mouse_check_button_pressed( mb_left ) || keyboard_check_pressed( vk_enter) );
@@ -36,7 +37,7 @@ if ( window != windowPrev ){
 
 
 ///		Trigger PauseMenu	///
-if ( kPause ){
+if ( kPauseEsc || kPauseP ){
 	if ( pause ){
 		alarm[0]	= 2; //Resume
 	} else {
